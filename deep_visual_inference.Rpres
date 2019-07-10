@@ -20,12 +20,90 @@ Who am I
 
 <div class="footer">bit.ly/jsm2019</div>
 
+Line 'Em Up!
+========================================================
+title: FALSE
+type: black_center
+
+# Line 'Em Up!
+
+Does your plot contain a signal over noise?
+========================================================
+incremental: true
+
+- The key to understanding Visual Inference:
+- A plot is a statistic
+- Permute your data a few times, gather a few plots
+- Judge your plot vs. the distribution of plots
+- Assumption-free, Parameter-free
+- But how to present a distribution of plots?
+
+<div class="footer">bit.ly/jsm2019</div>
+
+Like so...
+========================================================
+
+```{r Lineup-example1, message = FALSE, warning = FALSE, echo = FALSE}
+library(tidyverse)
+library(nullabor)
+
+lineup_data_mtcars <- lineup(null_permute("hp"), mtcars)
+
+ggplot(lineup_data_mtcars, aes(disp, hp)) +
+  geom_point() +
+  labs(title = "Is there a relation between a car's Displacement and Horse Power?") +
+  facet_wrap(~ .sample)
+```
+
+<div class="footer">bit.ly/jsm2019</div>
+
+And so...
+========================================================
+
+```{r Lineup-example2, message = FALSE, warning = FALSE, echo = FALSE}
+library(ggmosaic)
+
+fly2 <- fly %>%
+  mutate(
+    RudeToBringBaby = forcats::fct_recode(RudeToBringBaby, No = "No, not at all rude", Somewhat = "Yes, somewhat rude", Yes = "Yes, very rude"),
+    RudeToRecline = forcats::fct_recode(RudeToRecline, No = "No, not rude at all", Somewhat = "Yes, somewhat rude", Yes = "Yes, very rude"),
+    RudeToBringBaby = forcats::fct_relevel(RudeToBringBaby, c("Yes", "Somewhat", "No")),
+    RudeToRecline = forcats::fct_relevel(RudeToRecline, c("Yes", "Somewhat", "No")))
+
+lineup_data_fly <- lineup(null_permute("Gender"), fly2)
+
+ggplot(lineup_data_fly) +
+  geom_mosaic(aes(x = product(RudeToBringBaby, Gender), fill=RudeToBringBaby), na.rm=TRUE) +
+  labs(x = "", y = "", title = "Is there a relation between Gender and Answer?", subtitle = "(Is it rude to bring a baby on plane?)") +
+  scale_fill_ordinal(name = "") +
+  facet_wrap(~ .sample)
+```
+
+<div class="footer">bit.ly/jsm2019</div>
+
+And so...
+========================================================
+
+<div class="footer">bit.ly/jsm2019</div>
+
 Me Against My Laptop
 ========================================================
 title: FALSE
-type: back_image
+type: black_center
 
 # Me Against My Laptop
+
+How many scatterplots have I looked at?
+========================================================
+incremental: true
+
+- Scatterplots, Residual plots, Pairs plots
+- Say 3 plots a day (as if) X 5 days a week X 52 weeks a year X 9 years since graduation = 7K
+- Well, my laptop can look at 20K scatterplots in 1 minute
+- Is my laptop a better Statistician than me? No.
+- *Could* my laptop be a better Statistician than me?
+
+<div class="footer">bit.ly/jsm2019</div>
 
 Thank You
 ========================================================

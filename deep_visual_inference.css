@@ -48,15 +48,16 @@
 .black_center .reveal h2,
 .black_center .reveal p {
   margin-top: 25%;
-  color: white;
+  color: black;
 }
 
 .black_image .reveal .state-background {
-  background: white;
+  background: black;
 } 
 
 .black_image .reveal h1,
 .black_image .reveal h2,
 .black_image .reveal p {
+  margin-top: 25%;
   color: white;
 }

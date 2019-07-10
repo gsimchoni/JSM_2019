@@ -20,12 +20,63 @@ Who am I
 
 <div class="footer">bit.ly/jsm2019</div>
 
+Line 'Em Up!
+========================================================
+title: FALSE
+type: black_center
+
+# Line 'Em Up!
+
+Does your plot contain a signal over noise?
+========================================================
+incremental: true
+
+- The key to understanding Visual Inference:
+- A plot is a statistic
+- Permute your data a few times, gather a few plots
+- Judge your plot vs. the distribution of plots
+- Assumption-free, Parameter-free
+- But how to present a distribution of plots?
+
+<div class="footer">bit.ly/jsm2019</div>
+
+Like so...
+========================================================
+
+![plot of chunk Lineup-example1](deep_visual_inference-figure/Lineup-example1-1.png)
+
+<div class="footer">bit.ly/jsm2019</div>
+
+And so...
+========================================================
+
+![plot of chunk Lineup-example2](deep_visual_inference-figure/Lineup-example2-1.png)
+
+<div class="footer">bit.ly/jsm2019</div>
+
+And so...
+========================================================
+
+<div class="footer">bit.ly/jsm2019</div>
+
 Me Against My Laptop
 ========================================================
 title: FALSE
-type: back_image
+type: black_center
 
 # Me Against My Laptop
+
+How many scatterplots have I looked at?
+========================================================
+incremental: true
+
+- Scatterplots, Residual plots, Pairs plots
+- Say 3 plots a day (as if) X 5 days a week X 52 weeks a year X 9 years since graduation = 7K
+- Well, my laptop can look at 20K scatterplots in 1 minute
+- Is my laptop a better Statistician than me? No.
+- *Could* my laptop be a better Statistician than me?
+
+<div class="footer">bit.ly/jsm2019</div>
 
 Thank You
 ========================================================
