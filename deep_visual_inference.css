@@ -1,0 +1,62 @@
+.footer {
+    color: blue;
+    position: fixed; top: 90%;
+    text-align:right; width:110%;
+    font-size:80%;
+}
+
+.section .reveal .state-background {
+    background: url("images/cate.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    filter: brightness(1.3);
+}
+
+.section .reveal h1,
+.section .reveal h2,
+.section .reveal p {
+  color: white;
+}
+.section .reveal a {
+  color: pink;
+}
+
+.black_center .reveal .state-background {
+  background-color: white;
+} 
+
+.back_image .reveal h1,
+.back_image .reveal h2,
+.back_image .reveal p {
+  margin-top: 25%;
+  margin-left: 0%;
+  color: white;
+}
+
+.back_image .reveal .state-background {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/cate.jpg");
+  filter: brightness(1.3);
+} 
+
+.black_center .reveal h1,
+.black_center .reveal h2,
+.black_center .reveal p {
+  margin-top: 25%;
+  color: white;
+}
+
+.black_image .reveal .state-background {
+  background: white;
+} 
+
+.black_image .reveal h1,
+.black_image .reveal h2,
+.black_image .reveal p {
+  color: white;
+}
