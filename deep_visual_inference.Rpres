@@ -14,7 +14,7 @@ Who am I
 
 - Graduated MSc Statistics from TAU in 2010
 - Data Scientist (otherwise they won't hire me) subspecies Statistician
-- 888 2 years, ebay 3 years, IBM 1.5 years, vFunction 1.5 years
+- 888, ebay, IBM, vFunction
 - Blogger: [Sex, Drugs and Data](http://giorasimchoni.com)
 - R/Python enthusiast: [Github](https://github.com/gsimchoni)
 
@@ -34,7 +34,7 @@ incremental: true
 - The key to understanding Visual Inference:
 - A plot is a statistic
 - Permute your data a few times, gather a few plots
-- Judge your plot vs. the distribution of plots
+- Judge your plot vs. the distribution of plots or run a survey
 - Assumption-free, Parameter-free
 - But how to present a distribution of plots?
 
@@ -122,12 +122,44 @@ ggplot(lineup_data_roles, aes(Gender, n_roles, col = Gender)) +
 
 <div class="footer">bit.ly/jsm2019</div>
 
-But wait
+Wait
 ========================================================
 title: FALSE
 type: black_center
 
-# But wait, did you just say "judge a plot", as in "classify an image", and the year >= 2012?
+# Wait, did you just say "judge a plot", as in "classify an image", and the year is >= 2012?
+
+Deep Learning can't solve all your problems
+========================================================
+incremental: true
+
+- But it sure is good in Computer Vision
+- My idea: give a neural network thousands of scatter plots (mosaic plots, swarm plots)
+- Of varying linear correlation (Cramer's V, t statistic)
+- Train it to predict correlation (not calculate!)
+- If it's good (low MSE), show it the lineup
+- Make it choose the scatter plot with the highest score
+
+<div class="footer">bit.ly/jsm2019</div>
+
+A Convolutional Network
+========================================================
+
+![](images/architecture_expanded.png)
+
+<font size="6">(Full code in my blog post [Book'em Danno!](http://giorasimchoni.com/2018/02/07/2018-02-07-book-em-danno/) and through References)</font>
+
+If it's good
+========================================================
+title: FALSE
+type: black_center
+
+# *If* it's good?
+
+Oh, it's good
+========================================================
+
+<div class="footer">bit.ly/jsm2019</div>
 
 Me Against My Laptop
 ========================================================
@@ -136,13 +168,13 @@ type: black_center
 
 # Me Against My Laptop
 
-How many scatterplots have I looked at?
+How many scatter plots have I looked at?
 ========================================================
 incremental: true
 
-- Scatterplots, Residual plots, Pairs plots
+- Scatter plots, Residual plots, Pairs plots
 - Say 3 plots a day (as if) X 5 days a week X 52 weeks a year X 9 years since graduation = 7K
-- Well, my laptop can look at 20K scatterplots in 1 minute
+- Well, my laptop can look at 20K scatter plots in 1 minute
 - Is my laptop a better Statistician than me? No.
 - *Could* my laptop be a better Statistician than me?
 
