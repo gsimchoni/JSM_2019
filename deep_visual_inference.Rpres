@@ -43,6 +43,8 @@ incremental: true
 Like so...
 ========================================================
 
+### Is there a relation between a car's Displacement and its Horse Power?
+
 ```{r Lineup-example1, message = FALSE, warning = FALSE, echo = FALSE}
 library(tidyverse)
 library(nullabor)
@@ -55,7 +57,6 @@ lineup_data_mtcars <- readRDS("data/lineup_data_mtcars.RData")
 
 ggplot(lineup_data_mtcars, aes(disp, hp)) +
   geom_point() +
-  labs(title = "Is there a relation between a car's Displacement and Horse Power?") +
   facet_wrap(~ .sample)
 ```
 
@@ -63,6 +64,9 @@ ggplot(lineup_data_mtcars, aes(disp, hp)) +
 
 And so...
 ========================================================
+
+### Is there a relation between Gender and Answer?
+#### (Is it rude to bring a baby on plane?)
 
 ```{r Lineup-example2, message = FALSE, warning = FALSE, echo = FALSE}
 library(ggmosaic)
@@ -83,7 +87,7 @@ lineup_data_fly <- readRDS("data/lineup_data_fly.RData")
 
 ggplot(lineup_data_fly) +
   geom_mosaic(aes(x = product(RudeToBringBaby, Gender), fill=RudeToBringBaby), na.rm=TRUE) +
-  labs(x = "", y = "", title = "Is there a relation between Gender and Answer?", subtitle = "(Is it rude to bring a baby on plane?)") +
+  labs(x = "", y = "") +
   scale_fill_ordinal(name = "") +
   facet_wrap(~ .sample)
 ```
@@ -92,6 +96,29 @@ ggplot(lineup_data_fly) +
 
 And so...
 ========================================================
+
+### Is there a relation between an actor's gender and no. of roles since his/her character ended?
+
+```{r Lineup-example3, message = FALSE, warning = FALSE, echo = FALSE}
+library(ggbeeswarm)
+
+roles_after_char_end <- read_csv("data/roles_after_char_end.csv") %>%
+  select(Gender, n_roles) %>%
+  drop_na()
+
+# reading from disk for reproducibility, however you should use the nullabor lineup function
+
+# lineup_data_roles <- lineup(null_permute("Gender"), roles_after_char_end)
+# saveRDS(lineup_data_roles, "data/lineup_data_roles.RData")
+lineup_data_roles <- readRDS("data/lineup_data_roles.RData")
+
+ggplot(lineup_data_roles, aes(Gender, n_roles, col = Gender)) +
+  geom_beeswarm() +
+  labs(x = "", y = "",
+       caption = "Emmy nominated US drama shows 2000-2014, appeared in at least half the episodes, 4+ years since character end") +
+  guides(color=FALSE) +
+  facet_wrap(~ .sample)
+```
 
 <div class="footer">bit.ly/jsm2019</div>
 

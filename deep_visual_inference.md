@@ -43,6 +43,8 @@ incremental: true
 Like so...
 ========================================================
 
+### Is there a relation between a car's Displacement and its Horse Power?
+
 ![plot of chunk Lineup-example1](deep_visual_inference-figure/Lineup-example1-1.png)
 
 <div class="footer">bit.ly/jsm2019</div>
@@ -50,12 +52,19 @@ Like so...
 And so...
 ========================================================
 
+### Is there a relation between Gender and Answer?
+#### (Is it rude to bring a baby on plane?)
+
 ![plot of chunk Lineup-example2](deep_visual_inference-figure/Lineup-example2-1.png)
 
 <div class="footer">bit.ly/jsm2019</div>
 
 And so...
 ========================================================
+
+### Is there a relation between an actor's gender and no. of roles since his/her character ended?
+
+![plot of chunk Lineup-example3](deep_visual_inference-figure/Lineup-example3-1.png)
 
 <div class="footer">bit.ly/jsm2019</div>
 
