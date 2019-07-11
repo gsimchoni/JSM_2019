@@ -47,7 +47,11 @@ Like so...
 library(tidyverse)
 library(nullabor)
 
-lineup_data_mtcars <- lineup(null_permute("hp"), mtcars)
+# reading from disk for reproducibility, however you should use the nullabor lineup function
+
+# lineup_data_mtcars <- lineup(null_permute("hp"), mtcars)
+# saveRDS(lineup_data_mtcars, "data/lineup_data_mtcars.RData")
+lineup_data_mtcars <- readRDS("data/lineup_data_mtcars.RData")
 
 ggplot(lineup_data_mtcars, aes(disp, hp)) +
   geom_point() +
@@ -70,7 +74,12 @@ fly2 <- fly %>%
     RudeToBringBaby = forcats::fct_relevel(RudeToBringBaby, c("Yes", "Somewhat", "No")),
     RudeToRecline = forcats::fct_relevel(RudeToRecline, c("Yes", "Somewhat", "No")))
 
-lineup_data_fly <- lineup(null_permute("Gender"), fly2)
+# reading from disk for reproducibility, however you should use the nullabor lineup function
+
+# lineup_data_fly <- lineup(null_permute("Gender"), fly2)
+# saveRDS(lineup_data_fly, "data/lineup_data_fly.RData")
+lineup_data_fly <- readRDS("data/lineup_data_fly.RData")
+
 
 ggplot(lineup_data_fly) +
   geom_mosaic(aes(x = product(RudeToBringBaby, Gender), fill=RudeToBringBaby), na.rm=TRUE) +
@@ -85,6 +94,13 @@ And so...
 ========================================================
 
 <div class="footer">bit.ly/jsm2019</div>
+
+But wait
+========================================================
+title: FALSE
+type: black_center
+
+# But wait, did you just say "judge a plot", as in "classify an image", and the year >= 2012?
 
 Me Against My Laptop
 ========================================================

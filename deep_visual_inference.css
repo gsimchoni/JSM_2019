@@ -24,7 +24,7 @@
 }
 
 .black_center .reveal .state-background {
-  background-color: white;
+  background-color: black;
 } 
 
 .back_image .reveal h1,
@@ -48,7 +48,7 @@
 .black_center .reveal h2,
 .black_center .reveal p {
   margin-top: 25%;
-  color: black;
+  color: white;
 }
 
 .black_image .reveal .state-background {

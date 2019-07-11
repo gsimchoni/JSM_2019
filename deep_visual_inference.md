@@ -59,6 +59,13 @@ And so...
 
 <div class="footer">bit.ly/jsm2019</div>
 
+But wait
+========================================================
+title: FALSE
+type: black_center
+
+# But wait, did you just say "judge a plot", as in "classify an image", and the year >= 2012?
+
 Me Against My Laptop
 ========================================================
 title: FALSE
