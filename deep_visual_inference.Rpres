@@ -156,7 +156,7 @@ type: black_center
 
 # *If* it's good?
 
-Oh, it's good
+Oh, it's quite good
 ========================================================
 
 ![](images/dl_pearson_r_pred_vs_true.png)
@@ -219,15 +219,16 @@ type: black_center
 
 See the computer's largest error
 ========================================================
+incremental: true
 
 ![](images/dl_pearson_r_largest_error.png)
 
-* True r: 0.22
-* Predicted r: -0.06
+***
 
-A mistake or a new form of Robust Regression?
-
-<div class="footer">bit.ly/jsm2019</div>
+* True r = 0.22, Pred. r = -0.06
+* A Statistician might look at the influence of observations by, say, Cook's Distance, and decide to remove outliers
+* Indeed, when removing the single most influential observation, pearson's r correlation drops to 0.08
+* So, a mistake or a new form of Robust Regression?
 
 Me Against My Laptop
 ========================================================
