@@ -43,7 +43,7 @@ incremental: true
 Like so...
 ========================================================
 
-### Is there a relation between a car's Displacement and its Horse Power?
+### Is there a relation between a car's Engine Displacement and its Horse Power? (n = 32)
 
 ![plot of chunk Lineup-example1](deep_visual_inference-figure/Lineup-example1-1.png)
 
@@ -52,8 +52,8 @@ Like so...
 And so...
 ========================================================
 
-### Is there a relation between Gender and Answer?
-#### (Is it rude to bring a baby on plane?)
+### Is there a relation between Gender and Answer? (n = 843)
+#### Q: Is it rude to bring a baby on plane?
 
 ![plot of chunk Lineup-example2](deep_visual_inference-figure/Lineup-example2-1.png)
 
@@ -62,7 +62,7 @@ And so...
 And so...
 ========================================================
 
-### Is there a relation between an actor's gender and no. of roles since his/her character ended?
+### Is there a relation between an actor's gender and no. of roles since his/her character ended? (n = 129)
 
 ![plot of chunk Lineup-example3](deep_visual_inference-figure/Lineup-example3-1.png)
 
@@ -79,7 +79,7 @@ Deep Learning can't solve all your problems
 ========================================================
 incremental: true
 
-- But it sure is good in Computer Vision
+- But it sure is good at Computer Vision
 - My idea: give a neural network thousands of scatter plots (mosaic plots, swarm plots)
 - Of varying linear correlation (Cramer's V, t statistic)
 - Train it to predict correlation (not calculate!)
@@ -104,6 +104,68 @@ type: black_center
 
 Oh, it's good
 ========================================================
+
+![](images/dl_pearson_r_pred_vs_true.png)
+
+***
+
+![](images/dl_cramer_v_pred_vs_true.png)
+
+And, it picks the original plot
+========================================================
+
+![](images/dl_pearson_r_lineup_choice.png)
+
+***
+
+![](images/dl_cramer_v_lineup_choice.png)
+
+Where things go wrong
+========================================================
+title: FALSE
+type: black_center
+
+# Where things go wrong
+
+When the relation is not linear
+========================================================
+
+### Is there a relation between a car's Engine Displacement and its Fuel Economy? (n = 32)
+
+![plot of chunk Lineup-example4](deep_visual_inference-figure/Lineup-example4-1.png)
+
+<div class="footer">bit.ly/jsm2019</div>
+
+When the relation is not linear
+========================================================
+
+### Is there a relation between a car's Engine Displacement and its Fuel Economy? (n = 32)
+
+![](images/dl_pearson_r_lineup_choice_not_linear.png)
+
+<div class="footer">bit.ly/jsm2019</div>
+
+When sample size is different
+========================================================
+
+<div class="footer">bit.ly/jsm2019</div>
+
+Where things become interesting
+========================================================
+title: FALSE
+type: black_center
+
+# Where things become interesting
+
+See the computer's largest error
+========================================================
+
+![](images/dl_pearson_r_largest_error.png)
+
+* True r: 0.22
+* Predicted r: -0.06
+
+A mistake or a new form of Robust Regression?
 
 <div class="footer">bit.ly/jsm2019</div>
 
