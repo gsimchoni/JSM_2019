@@ -178,12 +178,23 @@ incremental: true
 * True r = 0.94, Pred. r = 0.32
 * Some social scientists dream of such correlation. Computer is unimpressed.
 
-Me Against My Laptop
+When you input Cartman
+========================================================
+incremental: true
+
+![](images/cartman_for_pres.jpeg)
+
+***
+
+* True r = ?!, Pred. r = -32.4 (which is capped at -1)
+* Computer doesn't care what you input. Yet.
+
+Me Against The Computer
 ========================================================
 title: FALSE
 type: black_center
 
-# Me Against My Laptop
+# Me Against The Computer
 
 How many scatter plots have I looked at?
 ========================================================
@@ -206,3 +217,5 @@ type: back_image
 
 References
 ========================================================
+
+<div class="footer">bit.ly/jsm2019</div>
