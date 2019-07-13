@@ -120,36 +120,6 @@ And, it picks the original plot
 
 ![](images/dl_cramer_v_lineup_choice.png)
 
-Where things go wrong
-========================================================
-title: FALSE
-type: black_center
-
-# Where things go wrong
-
-When the relation is not linear
-========================================================
-
-### Is there a relation between a car's Engine Displacement and its Fuel Economy? (n = 32)
-
-![plot of chunk Lineup-example4](deep_visual_inference-figure/Lineup-example4-1.png)
-
-<div class="footer">bit.ly/jsm2019</div>
-
-When the relation is not linear
-========================================================
-
-### Is there a relation between a car's Engine Displacement and its Fuel Economy? (n = 32)
-
-![](images/dl_pearson_r_lineup_choice_not_linear.png)
-
-<div class="footer">bit.ly/jsm2019</div>
-
-When sample size is different
-========================================================
-
-<div class="footer">bit.ly/jsm2019</div>
-
 Where things become interesting
 ========================================================
 title: FALSE
@@ -169,6 +139,44 @@ incremental: true
 * A Statistician might look at the influence of observations by, say, Cook's Distance, and decide to remove outliers
 * Indeed, when removing the single most influential observation, pearson's r correlation drops to 0.08
 * So, a mistake or a new form of Robust Regression?
+
+Where things go wrong
+========================================================
+title: FALSE
+type: black_center
+
+# Where things go wrong
+
+When the relation is not linear
+========================================================
+transition: none
+
+### Is there a relation between a car's Engine Displacement and its Fuel Economy? (n = 32)
+
+![plot of chunk Lineup-example4](deep_visual_inference-figure/Lineup-example4-1.png)
+
+<div class="footer">bit.ly/jsm2019</div>
+
+When the relation is not linear
+========================================================
+transition: none
+
+### Is there a relation between a car's Engine Displacement and its Fuel Economy? (n = 32)
+
+![](images/dl_pearson_r_lineup_choice_not_linear.png)
+
+<div class="footer">bit.ly/jsm2019</div>
+
+When sample size is different
+========================================================
+incremental: true
+
+![](images/smaller_sample.png)
+
+***
+
+* True r = 0.94, Pred. r = 0.32
+* Some social scientists dream of such correlation. Computer is unimpressed.
 
 Me Against My Laptop
 ========================================================
@@ -195,3 +203,6 @@ title: FALSE
 type: back_image
 
 # Thank You.
+
+References
+========================================================
