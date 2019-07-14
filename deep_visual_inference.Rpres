@@ -189,10 +189,10 @@ incremental: true
 
 ***
 
-* True r = 0.22, Pred. r = -0.06
-* A Statistician might look at the influence of observations by, say, Cook's Distance, and decide to remove outliers
-* Indeed, when removing the single most influential observation, pearson's r correlation drops to 0.08
-* So, a mistake or a new form of Robust Regression?
+- True r = 0.22, Pred. r = -0.06
+- A Statistician might look at the influence of observations by, say, Cook's Distance, and decide to remove outliers
+- Indeed, when removing the single most influential observation, pearson's r correlation drops to 0.08
+- So, a mistake or a new form of Robust Regression?
 
 Where things go wrong
 ========================================================
@@ -235,8 +235,9 @@ incremental: true
 
 ***
 
-* True r = 0.94, Pred. r = 0.32
-* Some social scientists dream of such correlation. Computer is unimpressed.
+- True r = 0.94, Pred. r = 0.32
+- Some social scientists dream of such correlation. Computer is unimpressed.
+- (It is still able to pick it in a lineup though)
 
 When you input Cartman
 ========================================================
@@ -246,8 +247,8 @@ incremental: true
 
 ***
 
-* True r = ?!, Pred. r = -32.4 (which is capped at -1)
-* Computer doesn't care what you input. Yet.
+- True r = ?!, Pred. r = -32.4 (which is capped at -1)
+- Computer doesn't care what you input. Yet.
 
 Me Against The Computer
 ========================================================
@@ -275,7 +276,23 @@ type: back_image
 
 # Thank You.
 
-References
+References (I)
 ========================================================
+
+- Visual Inference and the Lineup protocol: [To the Tidyverse and Beyond: Challenges for the Future in Data Science](https://www.rstudio.com/resources/videos/to-the-tidyverse-and-beyond/), Diane Cook, rstudio::conf 2018
+- More on Visual Inference: [Statistical inference for exploratory data analysis and model diagnostics](https://royalsocietypublishing.org/doi/full/10.1098/rsta.2009.0120), Buja, A., Cook, D., Hofmann H., Lawrence, M., Eun-Kyung L., Swayne, D. F., Wickham, H., 2009
+- The [`nullabor`](http://dicook.github.io/nullabor/) package, Wickham, H., Chowdhury, N. R., Cook, D., Hofmann, H., 2009
+- The [`ggmosaic`](https://github.com/haleyjeppson/ggmosaic) package, Haley Jeppson and Heike Hofmann, 2018
+
+<div class="footer">bit.ly/jsm2019</div>
+
+References (II)
+========================================================
+
+- The [`ggbeeswarm`](https://github.com/eclarke/ggbeeswarm) package, Erik Clarke and Scott Sherrill-Mix
+- Five Thirty Eight datasets: see their [Github](https://github.com/fivethirtyeight/data) and articles [41 Percent Of Fliers Think You’re Rude If You Recline Your Seat](https://fivethirtyeight.com/features/airplane-etiquette-recline-seat/) and [Mad Men Is Ending. What’s Next For The Cast?](https://fivethirtyeight.com/features/mad-men-is-ending-whats-next-for-the-cast/)
+- My blog post for most of the code and more: [Book'em Danno!](http://giorasimchoni.com/2018/02/07/2018-02-07-book-em-danno/)
+- Additional code in [gists]()
+- [Online tool](http://alexlenail.me/NN-SVG/AlexNet.html) for drawing deep learning architectures by Alexander Lenail
 
 <div class="footer">bit.ly/jsm2019</div>
