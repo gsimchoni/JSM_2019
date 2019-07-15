@@ -7,7 +7,7 @@ autosize: true
 JSM 2019
 
 This RPres/html is available at Github or at:
-http://bit.ly/jsm2019
+http://bit.ly/dvi_jsm2019
 
 Who am I
 ========================================================
@@ -18,7 +18,7 @@ Who am I
 - Blogger: [Sex, Drugs and Data](http://giorasimchoni.com)
 - R/Python enthusiast: [Github](https://github.com/gsimchoni)
 
-<div class="footer">bit.ly/jsm2019</div>
+<div class="footer">bit.ly/dvi_jsm2019</div>
 
 Line 'Em Up!
 ========================================================
@@ -38,7 +38,7 @@ incremental: true
 - Assumption-free, Parameter-free
 - But how to present a distribution of plots?
 
-<div class="footer">bit.ly/jsm2019</div>
+<div class="footer">bit.ly/dvi_jsm2019</div>
 
 Like so...
 ========================================================
@@ -47,7 +47,7 @@ Like so...
 
 ![plot of chunk Lineup-example1](deep_visual_inference-figure/Lineup-example1-1.png)
 
-<div class="footer">bit.ly/jsm2019</div>
+<div class="footer">bit.ly/dvi_jsm2019</div>
 
 And so...
 ========================================================
@@ -57,7 +57,7 @@ And so...
 
 ![plot of chunk Lineup-example2](deep_visual_inference-figure/Lineup-example2-1.png)
 
-<div class="footer">bit.ly/jsm2019</div>
+<div class="footer">bit.ly/dvi_jsm2019</div>
 
 And so...
 ========================================================
@@ -66,7 +66,7 @@ And so...
 
 ![plot of chunk Lineup-example3](deep_visual_inference-figure/Lineup-example3-1.png)
 
-<div class="footer">bit.ly/jsm2019</div>
+<div class="footer">bit.ly/dvi_jsm2019</div>
 
 Wait
 ========================================================
@@ -86,7 +86,7 @@ incremental: true
 - If it's good (low MSE), show it the lineup
 - Make it choose the scatter plot with the highest score
 
-<div class="footer">bit.ly/jsm2019</div>
+<div class="footer">bit.ly/dvi_jsm2019</div>
 
 A Convolutional Network
 ========================================================
@@ -155,7 +155,7 @@ transition: none
 
 ![plot of chunk Lineup-example4](deep_visual_inference-figure/Lineup-example4-1.png)
 
-<div class="footer">bit.ly/jsm2019</div>
+<div class="footer">bit.ly/dvi_jsm2019</div>
 
 When the relation is not linear
 ========================================================
@@ -165,7 +165,7 @@ transition: none
 
 ![](images/dl_pearson_r_lineup_choice_not_linear.png)
 
-<div class="footer">bit.ly/jsm2019</div>
+<div class="footer">bit.ly/dvi_jsm2019</div>
 
 When sample size is different
 ========================================================
@@ -207,7 +207,7 @@ incremental: true
 - Is my laptop a better Statistician than me? No.
 - *Could* my laptop be a better Statistician than me?
 
-<div class="footer">bit.ly/jsm2019</div>
+<div class="footer">bit.ly/dvi_jsm2019</div>
 
 Thank You
 ========================================================
@@ -224,7 +224,7 @@ References (I)
 - The [`nullabor`](http://dicook.github.io/nullabor/) package, Wickham, H., Chowdhury, N. R., Cook, D., Hofmann, H., 2009
 - The [`ggmosaic`](https://github.com/haleyjeppson/ggmosaic) package, Haley Jeppson and Heike Hofmann, 2018
 
-<div class="footer">bit.ly/jsm2019</div>
+<div class="footer">bit.ly/dvi_jsm2019</div>
 
 References (II)
 ========================================================
@@ -236,4 +236,4 @@ References (II)
 - Additional code for running Pearson's r prediction on a smaller sample and on Cartman's image in this [gist](https://github.com/gsimchoni/JSM_2019/blob/master/dl_pearson_r_additional_code_to_blog.R)
 - [Online tool](http://alexlenail.me/NN-SVG/AlexNet.html) for drawing deep learning architectures by Alexander Lenail
 
-<div class="footer">bit.ly/jsm2019</div>
+<div class="footer">bit.ly/dvi_jsm2019</div>
