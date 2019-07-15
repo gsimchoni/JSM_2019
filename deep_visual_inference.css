@@ -6,7 +6,7 @@
 }
 
 .section .reveal .state-background {
-    background: url("images/cate.jpg");
+    background: url("cate.jpg");
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -40,7 +40,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url("images/cate.jpg");
+  background-image: url("cate.jpg");
   filter: brightness(1.3);
 } 
 

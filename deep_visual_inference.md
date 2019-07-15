@@ -232,7 +232,8 @@ References (II)
 - The [`ggbeeswarm`](https://github.com/eclarke/ggbeeswarm) package, Erik Clarke and Scott Sherrill-Mix
 - Five Thirty Eight datasets: see their [Github](https://github.com/fivethirtyeight/data) and articles [41 Percent Of Fliers Think You’re Rude If You Recline Your Seat](https://fivethirtyeight.com/features/airplane-etiquette-recline-seat/) and [Mad Men Is Ending. What’s Next For The Cast?](https://fivethirtyeight.com/features/mad-men-is-ending-whats-next-for-the-cast/)
 - My blog post for most of the code and more: [Book'em Danno!](http://giorasimchoni.com/2018/02/07/2018-02-07-book-em-danno/)
-- Additional code in [gists]()
+- Additional code for sampling from "Bi-Categorical" distributions and running DL in this [gist](https://github.com/gsimchoni/JSM_2019/blob/master/dl_cramer_v.R)
+- Additional code for running Pearson's r prediction on a smaller sample and on Cartman's image in this [gist](https://github.com/gsimchoni/JSM_2019/blob/master/dl_pearson_r_additional_code_to_blog.R)
 - [Online tool](http://alexlenail.me/NN-SVG/AlexNet.html) for drawing deep learning architectures by Alexander Lenail
 
 <div class="footer">bit.ly/jsm2019</div>
