@@ -209,12 +209,12 @@ incremental: true
 
 <div class="footer">bit.ly/dvi_jsm2019</div>
 
-Thank You
+To Be Continued
 ========================================================
 title: FALSE
 type: back_image
 
-# Thank You.
+# To Be Continued...
 
 References (I)
 ========================================================
@@ -234,6 +234,6 @@ References (II)
 - My blog post for most of the code and more: [Book'em Danno!](http://giorasimchoni.com/2018/02/07/2018-02-07-book-em-danno/)
 - Additional code for sampling from "Bi-Categorical" distributions and running DL in this [gist](https://github.com/gsimchoni/JSM_2019/blob/master/dl_cramer_v.R)
 - Additional code for running Pearson's r prediction on a smaller sample and on Cartman's image in this [gist](https://github.com/gsimchoni/JSM_2019/blob/master/dl_pearson_r_additional_code_to_blog.R)
-- [Online tool](http://alexlenail.me/NN-SVG/AlexNet.html) for drawing deep learning architectures by Alexander Lenail
+- Or, if you're a Python person, I've been working on replicating everything you saw in Python in this [repo](https://github.com/gsimchoni/PyData_DeepVisualInference)
 
 <div class="footer">bit.ly/dvi_jsm2019</div>
